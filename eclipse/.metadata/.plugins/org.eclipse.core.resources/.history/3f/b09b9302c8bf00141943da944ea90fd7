@@ -1,0 +1,68 @@
+package net.kloudspace.real;
+
+import net.kloudspace.real.trade.TradeEvent;
+import net.kloudspace.real.trade.TradeHandler;
+import net.kloudspace.real.trade.compat.BackpacksCompat;
+import net.kloudspace.real.trade.compat.event.BackpackEvents;
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.common.MinecraftForge;
+import cpw.mods.fml.common.Loader;
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.VillagerRegistry;
+
+/*
+ * @Author: Kloud
+ */
+/*
+ * @Date: 2/28/2015 7:28p PST
+ */
+
+
+@Mod(modid = "trader", name = "Trader", version = "1710-1.1")
+public class Trader {
+	
+	public static String MINECRAFT = "minecraft";
+	public ResourceLocation farmer = new ResourceLocation(MINECRAFT, "textures/entity/villager/farmer.png");
+	public ResourceLocation librarian = new ResourceLocation(MINECRAFT, "textures/entity/villager/librarian.png");
+	public ResourceLocation priest = new ResourceLocation(MINECRAFT, "textures/entity/villager/priest.png");
+	public ResourceLocation blacksmith = new ResourceLocation(MINECRAFT, "textures/entity/villager/smith.png");
+	public ResourceLocation butcher = new ResourceLocation(MINECRAFT, "textures/entity/villager/butcher.png");
+	
+	
+	
+	@EventHandler
+	public void preLoad(FMLPreInitializationEvent event) {
+		VillagerRegistry.instance().registerVillagerId(6);
+		VillagerRegistry.instance().registerVillagerId(7);
+		VillagerRegistry.instance().registerVillagerId(8);
+		VillagerRegistry.instance().registerVillagerId(9);
+		VillagerRegistry.instance().registerVillagerId(10);
+		for(int i = 0; i < 10; ++i) {
+		VillagerRegistry.instance().registerVillageTradeHandler(6, new TradeHandler());
+		VillagerRegistry.instance().registerVillageTradeHandler(7, new TradeHandler());
+		VillagerRegistry.instance().registerVillageTradeHandler(8, new TradeHandler());
+		VillagerRegistry.instance().registerVillageTradeHandler(9, new TradeHandler());
+		VillagerRegistry.instance().registerVillageTradeHandler(10, new TradeHandler());
+		VillagerRegistry.instance().registerVillagerSkin(6, farmer);
+		VillagerRegistry.instance().registerVillagerSkin(7, librarian);
+		VillagerRegistry.instance().registerVillagerSkin(8, priest);
+		VillagerRegistry.instance().registerVillagerSkin(9, blacksmith);
+		VillagerRegistry.instance().registerVillagerSkin(10, butcher);
+		MinecraftForge.EVENT_BUS.register(new TradeEvent());
+		
+		if(Loader.isModLoaded("Backback")) {
+			VillagerRegistry.instance().registerVillagerId(11);
+			VillagerRegistry.instance().registerVillagerSkin(11, priest);
+			VillagerRegistry.instance().registerVillageTradeHandler(11, new BackpacksCompat());
+			MinecraftForge.EVENT_BUS.register(new BackpackEvents());
+			}
+		}
+	}
+
+}
+
+/*
+ * Added Backpack Support
+ */

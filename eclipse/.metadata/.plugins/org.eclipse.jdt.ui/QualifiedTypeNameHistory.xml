@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="net.minecraft.init.Blocks"/>
+<fullyQualifiedTypeName name="net.minecraft.enchantment.EnchantmentHelper"/>
+<fullyQualifiedTypeName name="net.minecraft.init.Items"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.passive.EntityVillager"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.common.registry.VillagerRegistry"/>
+<fullyQualifiedTypeName name="net.minecraftforge.common.MinecraftForge"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.common.Loader"/>
+<fullyQualifiedTypeName name="shukaro.artifice.ArtificeItems"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="de.eydamos.backpack.item.ItemsBackpack"/>
+<fullyQualifiedTypeName name="net.minecraft.item.Item"/>
+<fullyQualifiedTypeName name="net.minecraft.item.ItemStack"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.EntityCreature"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.common.registry.IEntityAdditionalSpawnData"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.IEntityOwnable"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.EntityLivingBase"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.ai.EntityAIBase"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.ai.attributes.AttributeModifier"/>
+<fullyQualifiedTypeName name="net.minecraft.world.World"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.SharedMonsterAttributes"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.ai.EntityAISwimming"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.ai.EntityAIHurtByTarget"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.ai.EntityAINearestAttackableTarget"/>
+<fullyQualifiedTypeName name="net.minecraft.world.WorldServer"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,28 @@
+package net.kloudspace.real.entity;
+
+import net.minecraft.entity.player.PlayerCapabilities;
+import net.minecraft.inventory.Container;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.ChunkCoordinates;
+import net.minecraft.util.FoodStats;
+import net.minecraft.world.World;
+
+public class MinerEntity  extends VillagerEntity {
+	
+	public Container inventoryContainer;
+	public Container openContainer;
+	protected FoodStats foodStats = new FoodStats();
+	protected boolean sleeping;
+	public ChunkCoordinates villagerLocation;
+	private int sleepTimer;
+	private ChunkCoordinates startMinecartRidingCoordinate;
+	public PlayerCapabilities capabilities = new PlayerCapabilities();
+	private ItemStack itemInUse;
+	private int itemInUseCount;
+	
+
+	public MinerEntity(World world, int profession) {
+		super(world, profession);
+		this.entityUniqueID = func_146094_a(p_i45324_2_);	}
+
+}

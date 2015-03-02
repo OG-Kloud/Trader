@@ -1,0 +1,31 @@
+package net.kloudspace.real;
+
+import net.kloudspace.real.trade.TradeHandler;
+import net.minecraft.entity.passive.EntityVillager;
+import net.minecraftforge.event.entity.EntityJoinWorldEvent;
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import cpw.mods.fml.common.registry.VillagerRegistry;
+
+
+@Mod(modid = "trader", name = "Trader", version = "1710-1")
+public class Trader {
+	
+	
+	@EventHandler
+	public void preLoad(FMLPreInitializationEvent event) {
+		for(int i = 0; i < 10; ++i) {
+		VillagerRegistry.instance().registerVillageTradeHandler(6, new TradeHandler());
+		}
+	}
+	
+	@SubscribeEvent
+	public void replaceVanillaVillagers(EntityJoinWorldEvent event){
+	    if (event.entity instanceof EntityVillager && ((EntityVillager)event.entity).getProfession()<6){
+	        ((EntityVillager)event.entity).setProfession(6);
+	    }
+	}
+
+}

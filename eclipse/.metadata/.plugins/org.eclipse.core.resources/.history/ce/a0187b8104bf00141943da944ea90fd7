@@ -1,0 +1,24 @@
+package net.kloudspace.real;
+
+import net.kloudspace.real.trade.TradeHandler;
+import net.minecraft.entity.passive.EntityVillager;
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.VillagerRegistry;
+
+
+@Mod(modid = "trader", name = "Trader", version = "1710-1")
+public class Trader {
+	
+	
+	public String villagerList = VillagerRegistry.getRegisteredVillagers().iterator().next().toString();
+	
+	@EventHandler
+	public void preLoad(FMLPreInitializationEvent event) {
+		for(int i = 0; i < 10; ++i) {
+		VillagerRegistry.instance().registerVillageTradeHandler(i, new TradeHandler());
+		}
+	}
+
+}

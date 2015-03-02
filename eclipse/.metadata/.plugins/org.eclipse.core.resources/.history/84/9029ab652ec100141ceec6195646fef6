@@ -1,0 +1,58 @@
+package net.kloudspace.real.entity;
+
+import net.minecraft.entity.EntityAgeable;
+import net.minecraft.entity.IMerchant;
+import net.minecraft.entity.passive.IAnimals;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
+import net.minecraft.village.MerchantRecipe;
+import net.minecraft.village.MerchantRecipeList;
+import net.minecraft.world.World;
+
+public class VillagerEntity extends EntityAgeable implements IAnimals, IMerchant {
+
+	public VillagerEntity(World world) {
+		super(world);
+	}
+
+	@Override
+	public EntityAgeable createChild(EntityAgeable arg0) {
+		return null;
+	}
+
+	@Override
+	public void func_110297_a_(ItemStack arg0) {
+		
+	}
+
+	@Override
+	public EntityPlayer getCustomer() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public MerchantRecipeList getRecipes(EntityPlayer arg0) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void setCustomer(EntityPlayer arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void setRecipes(MerchantRecipeList arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void useRecipe(MerchantRecipe arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

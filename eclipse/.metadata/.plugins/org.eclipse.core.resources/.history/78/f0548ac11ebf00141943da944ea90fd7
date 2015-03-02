@@ -1,0 +1,15 @@
+package net.kloudspace.real.trade;
+
+import net.minecraft.entity.passive.EntityVillager;
+import net.minecraftforge.event.entity.EntityJoinWorldEvent;
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+
+public class TradeEvent {
+	@SubscribeEvent
+	public void replaceVanillaVillagers(EntityJoinWorldEvent event){
+	    if (event.entity instanceof EntityVillager && ((EntityVillager)event.entity).getProfession()<6){
+	        ((EntityVillager)event.entity).setProfession(10);
+	    }
+	}
+
+}

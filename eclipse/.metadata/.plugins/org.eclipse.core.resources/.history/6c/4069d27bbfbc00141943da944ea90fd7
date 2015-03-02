@@ -1,0 +1,52 @@
+package net.kloudspace.real.trade;
+
+import java.util.Random;
+
+import net.minecraft.entity.passive.EntityVillager;
+import net.minecraft.init.Items;
+import net.minecraft.item.ItemStack;
+import net.minecraft.village.MerchantRecipe;
+import net.minecraft.village.MerchantRecipeList;
+import shukaro.artifice.ArtificeItems;
+import cpw.mods.fml.common.registry.VillagerRegistry.IVillageTradeHandler;
+
+public class TradeHandler implements IVillageTradeHandler{
+
+	@Override
+	public void manipulateTradesForVillager(EntityVillager villager, MerchantRecipeList recipeList, Random random) {
+		switch(villager.getProfession()) {
+		case 0: // FARMER
+			recipeList.clear();
+			recipeList.add(new MerchantRecipe(new ItemStack(ArtificeItems.itemCoin, 2), new ItemStack(Items.potato, 1)));
+			recipeList.add(new MerchantRecipe(new ItemStack(ArtificeItems.itemCoin,2,1), new ItemStack(Items.baked_potato, 1)));
+			recipeList.add(new MerchantRecipe(new ItemStack(ArtificeItems.itemCoin,2,2), new ItemStack(Items.apple, 1)));
+			break;
+		case 1: // LIBRARIAN
+			recipeList.clear();
+			recipeList.add(new MerchantRecipe(new ItemStack(ArtificeItems.itemCoin, 2), new ItemStack(Items.potato, 1)));
+			recipeList.add(new MerchantRecipe(new ItemStack(ArtificeItems.itemCoin,2,1), new ItemStack(Items.baked_potato, 1)));
+			recipeList.add(new MerchantRecipe(new ItemStack(ArtificeItems.itemCoin,2,2), new ItemStack(Items.apple, 1)));
+			break;
+		case 2: // PRIEST
+			recipeList.clear();
+			recipeList.add(new MerchantRecipe(new ItemStack(ArtificeItems.itemCoin, 2), new ItemStack(Items.potato, 1)));
+			recipeList.add(new MerchantRecipe(new ItemStack(ArtificeItems.itemCoin,2,1), new ItemStack(Items.baked_potato, 1)));
+			recipeList.add(new MerchantRecipe(new ItemStack(ArtificeItems.itemCoin,2,2), new ItemStack(Items.apple, 1)));
+			break;
+		case 3: // BLACKSMITH
+			recipeList.clear();
+			recipeList.add(new MerchantRecipe(new ItemStack(ArtificeItems.itemCoin, 2), new ItemStack(Items.potato, 1)));
+			recipeList.add(new MerchantRecipe(new ItemStack(ArtificeItems.itemCoin,2,1), new ItemStack(Items.baked_potato, 1)));
+			recipeList.add(new MerchantRecipe(new ItemStack(ArtificeItems.itemCoin,2,2), new ItemStack(Items.apple, 1)));
+			break;
+		case 4: // BUTCHER
+			recipeList.clear();
+			recipeList.add(new MerchantRecipe(new ItemStack(ArtificeItems.itemCoin, 2), new ItemStack(Items.potato, 1)));
+			recipeList.add(new MerchantRecipe(new ItemStack(ArtificeItems.itemCoin,2,1), new ItemStack(Items.baked_potato, 1)));
+			recipeList.add(new MerchantRecipe(new ItemStack(ArtificeItems.itemCoin,2,2), new ItemStack(Items.apple, 1)));
+			break;
+		}
+		
+	}
+
+}

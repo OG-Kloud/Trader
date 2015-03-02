@@ -1,0 +1,50 @@
+[23:20:14] [main/INFO]: Extra: []
+[23:20:15] [main/INFO]: Running with arguments: [--userProperties, {}, --accessToken, {REDACTED}, --assetIndex, 1.7.10, --assetsDir, C:/Users/Joey/.gradle/caches/minecraft/assets, --version, 1.7.10, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.GradleStartCommon$GradleStartTweaker]
+[23:20:15] [main/INFO]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[23:20:15] [main/INFO]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[23:20:15] [main/INFO]: Loading tweak class name net.minecraftforge.gradle.GradleStartCommon$GradleStartTweaker
+[23:20:15] [main/INFO]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[23:20:15] [main/INFO]: Forge Mod Loader version 7.10.85.1291 for Minecraft 1.7.10 loading
+[23:20:15] [main/INFO]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.7.0_75, running on Windows 8.1:amd64:6.3, installed at C:\Program Files\Java\jre7
+[23:20:15] [main/INFO]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[23:20:15] [main/INFO]: Calling tweak class net.minecraftforge.gradle.GradleStartCommon$GradleStartTweaker
+[23:20:15] [main/INFO]: Injecting location in coremod cpw.mods.fml.relauncher.FMLCorePlugin
+[23:20:15] [main/INFO]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
+[23:20:15] [main/INFO]: Loading tweak class name cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+[23:20:15] [main/INFO]: Loading tweak class name cpw.mods.fml.common.launcher.FMLDeobfTweaker
+[23:20:15] [main/INFO]: Calling tweak class cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+[23:20:15] [main/INFO]: Calling tweak class cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+[23:20:15] [main/INFO]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
+[23:20:16] [main/ERROR]: The binary patch set is missing. Either you are in a development environment, or things are not going to work!
+[23:20:20] [main/ERROR]: FML appears to be missing any signature data. This is not a good thing
+[23:20:20] [main/INFO]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
+[23:20:20] [main/INFO]: Calling tweak class cpw.mods.fml.common.launcher.FMLDeobfTweaker
+[23:20:21] [main/INFO]: Loading tweak class name cpw.mods.fml.common.launcher.TerminalTweaker
+[23:20:21] [main/INFO]: Calling tweak class cpw.mods.fml.common.launcher.TerminalTweaker
+[23:20:22] [main/INFO]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[23:20:27] [main/INFO]: Setting user: Player252
+[23:20:30] [Client thread/INFO]: LWJGL Version: 2.9.1
+[23:20:35] [Client thread/INFO]: Attempting early MinecraftForge initialization
+[23:20:35] [Client thread/INFO]: MinecraftForge v10.13.2.1291 Initialized
+[23:20:35] [Client thread/INFO]: Replaced 183 ore recipies
+[23:20:35] [Client thread/INFO]: Completed early MinecraftForge initialization
+[23:20:35] [Client thread/INFO]: Config directory created successfully
+[23:20:36] [Client thread/INFO]: Searching C:\Java Projects\TradeOverride\eclipse\mods for mods
+[23:20:43] [Client thread/INFO]: Forge Mod Loader has identified 5 mods to load
+[23:20:44] [Client thread/ERROR]: The mod Artifice (Artifice) requires mods [CoFHCore] to be available
+[23:20:44] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Trader, FMLFileResourcePack:Artifice
+[23:20:44] [Client thread/WARN]: There were errors previously. Not beginning mod initialization phase
+[23:20:44] [Sound Library Loader/INFO]: [paulscode.sound.SoundSystemLogger:message:69]: 
+[23:20:44] [Sound Library Loader/INFO]: [paulscode.sound.SoundSystemLogger:message:69]: Starting up SoundSystem...
+[23:20:44] [Thread-5/INFO]: [paulscode.sound.SoundSystemLogger:message:69]: Initializing LWJGL OpenAL
+[23:20:44] [Thread-5/INFO]: [paulscode.sound.SoundSystemLogger:message:69]:     (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[23:20:45] [Thread-5/INFO]: [paulscode.sound.SoundSystemLogger:message:69]: OpenAL initialized.
+[23:20:45] [Sound Library Loader/INFO]: [paulscode.sound.SoundSystemLogger:message:69]: 
+[23:20:45] [Sound Library Loader/INFO]: Sound engine started
+[23:20:51] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[23:20:51] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[23:20:59] [Client thread/INFO]: Stopping!
+[23:20:59] [Client thread/INFO]: [paulscode.sound.SoundSystemLogger:message:69]: 
+[23:20:59] [Client thread/INFO]: [paulscode.sound.SoundSystemLogger:message:69]: SoundSystem shutting down...
+[23:20:59] [Client thread/INFO]: [paulscode.sound.SoundSystemLogger:importantMessage:90]:     Author: Paul Lamb, www.paulscode.com
+[23:20:59] [Client thread/INFO]: [paulscode.sound.SoundSystemLogger:message:69]: 
