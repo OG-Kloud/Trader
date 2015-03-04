@@ -30,9 +30,6 @@
 <fullyQualifiedTypeName name="org.apache.logging.log4j.LogManager"/>
 <fullyQualifiedTypeName name="cpw.mods.fml.common.Loader"/>
 <fullyQualifiedTypeName name="net.kloudspace.real.CommonProxy"/>
-<fullyQualifiedTypeName name="java.io.InputStream"/>
-<fullyQualifiedTypeName name="java.net.URL"/>
-<fullyQualifiedTypeName name="org.apache.commons.io.IOUtils"/>
 <fullyQualifiedTypeName name="net.kloudspace.version.Version"/>
 <fullyQualifiedTypeName name="net.kloudspace.version.VersionChecker"/>
 <fullyQualifiedTypeName name="net.minecraft.event.ClickEvent"/>
@@ -40,6 +37,13 @@
 <fullyQualifiedTypeName name="cpw.mods.fml.common.FMLCommonHandler"/>
 <fullyQualifiedTypeName name="net.kloudspace.real.event.VersionEvents"/>
 <fullyQualifiedTypeName name="net.kloudspace.real.clien.ClientProxy"/>
-<fullyQualifiedTypeName name="net.kloudspace.real.utils.Reference"/>
 <fullyQualifiedTypeName name="net.kloudspace.version.proxy.CommonProxy"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.common.event.FMLPostInitializationEvent"/>
+<fullyQualifiedTypeName name="net.kloudspace.real.proxy.CommonProxy"/>
+<fullyQualifiedTypeName name="org.apache.commons.io.IOUtils"/>
+<fullyQualifiedTypeName name="java.io.InputStream"/>
+<fullyQualifiedTypeName name="net.java.games.input.Version"/>
+<fullyQualifiedTypeName name="java.net.URL"/>
+<fullyQualifiedTypeName name="net.kloudspace.real.utils.Reference"/>
+<fullyQualifiedTypeName name="net.kloudspace.real.VersionChecker"/>
 </qualifiedTypeNameHistroy>
