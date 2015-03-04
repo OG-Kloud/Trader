@@ -1,0 +1,5 @@
+package net.kloudspace.real.event;
+
+public class VersionEvents {
+
+}

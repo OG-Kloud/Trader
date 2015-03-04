@@ -1,0 +1,25 @@
+package net.kloudspace.real.event;
+
+import net.kloudspace.real.Trader;
+import net.minecraft.event.ClickEvent;
+import net.minecraft.util.ChatComponentText;
+import net.minecraft.util.ChatStyle;
+import cpw.mods.fml.common.eventhandler.EventPriority;
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import cpw.mods.fml.common.gameevent.TickEvent.PlayerTickEvent;
+
+public class VersionEvents {
+	
+	@SubscribeEvent(priority = EventPriority.NORMAL)
+	public void onEvent(PlayerTickEvent event) {
+		if(!Trader.haveWarned && event.player.worldObj.isRemote && !Trader.vc.isLatest()) {
+			ClickEvent vccce = new ClickEvent(ClickEvent.Action.OPEN_URL, "https://mods.io/mods/1127-trader");
+			ChatStyle ccs = new ChatStyle().setChatClickEvent(vccce);
+			ChatComponentText vwcc = new ChatComponentText("Trader is not up to date, click here to update");
+			vwcc.setChatStyle(ccs);
+			event.player.addChatMessage(vwcc);
+			Trader.haveWarned = true;
+		}
+	}
+
+}

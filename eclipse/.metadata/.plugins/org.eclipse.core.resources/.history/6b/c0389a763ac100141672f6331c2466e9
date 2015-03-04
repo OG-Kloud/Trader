@@ -1,0 +1,17 @@
+package net.kloudspace.real.event;
+
+import net.kloudspace.real.Trader;
+import cpw.mods.fml.common.eventhandler.EventPriority;
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import cpw.mods.fml.common.gameevent.TickEvent.PlayerTickEvent;
+
+public class VersionEvents {
+	
+	@SubscribeEvent(priority = EventPriority.NORMAL)
+	public void onEvent(PlayerTickEvent event) {
+		if(Trader.haveWarned && event.player.worldObj.isRemote && Trader.vc.isLatest()) {
+			
+		}
+	}
+
+}

@@ -6,7 +6,6 @@
 <fullyQualifiedTypeName name="net.minecraft.entity.passive.EntityVillager"/>
 <fullyQualifiedTypeName name="cpw.mods.fml.common.registry.VillagerRegistry"/>
 <fullyQualifiedTypeName name="net.minecraftforge.common.MinecraftForge"/>
-<fullyQualifiedTypeName name="cpw.mods.fml.common.Loader"/>
 <fullyQualifiedTypeName name="shukaro.artifice.ArtificeItems"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="de.eydamos.backpack.item.ItemsBackpack"/>
@@ -25,4 +24,22 @@
 <fullyQualifiedTypeName name="net.minecraft.entity.ai.EntityAIHurtByTarget"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.ai.EntityAINearestAttackableTarget"/>
 <fullyQualifiedTypeName name="net.minecraft.world.WorldServer"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.common.SidedProxy"/>
+<fullyQualifiedTypeName name="net.kloudspace.real.Trader"/>
+<fullyQualifiedTypeName name="org.apache.logging.log4j.Logger"/>
+<fullyQualifiedTypeName name="org.apache.logging.log4j.LogManager"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.common.Loader"/>
+<fullyQualifiedTypeName name="net.kloudspace.real.CommonProxy"/>
+<fullyQualifiedTypeName name="java.io.InputStream"/>
+<fullyQualifiedTypeName name="java.net.URL"/>
+<fullyQualifiedTypeName name="org.apache.commons.io.IOUtils"/>
+<fullyQualifiedTypeName name="net.kloudspace.version.Version"/>
+<fullyQualifiedTypeName name="net.kloudspace.version.VersionChecker"/>
+<fullyQualifiedTypeName name="net.minecraft.event.ClickEvent"/>
+<fullyQualifiedTypeName name="net.minecraft.event.ClickEvent.Action"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.common.FMLCommonHandler"/>
+<fullyQualifiedTypeName name="net.kloudspace.real.event.VersionEvents"/>
+<fullyQualifiedTypeName name="net.kloudspace.real.clien.ClientProxy"/>
+<fullyQualifiedTypeName name="net.kloudspace.real.utils.Reference"/>
+<fullyQualifiedTypeName name="net.kloudspace.version.proxy.CommonProxy"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,5 @@
+package net.kloudspace;
+
+public interface IUpdate {
+
+}

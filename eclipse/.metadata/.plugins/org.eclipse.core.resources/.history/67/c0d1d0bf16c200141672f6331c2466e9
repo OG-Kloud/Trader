@@ -1,0 +1,10 @@
+package net.kloudspace.real.clien;
+
+import net.kloudspace.real.CommonProxy;
+import net.kloudspace.real.Trader;
+import net.kloudspace.real.VersionChecker;
+
+public class ClientProxy extends CommonProxy {
+	
+
+}

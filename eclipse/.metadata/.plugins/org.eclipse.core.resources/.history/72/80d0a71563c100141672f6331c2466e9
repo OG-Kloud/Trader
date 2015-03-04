@@ -1,0 +1,17 @@
+package net.kloudspace.real.version;
+
+import net.kloudspace.IUpdate;
+
+import org.apache.logging.log4j.Logger;
+
+public class ModVersion  implements IUpdate{
+	
+	protected final String _modid;
+	
+	protected final Logger log;
+	
+	protected ModVersion(Logger log) {
+		
+	}
+
+}

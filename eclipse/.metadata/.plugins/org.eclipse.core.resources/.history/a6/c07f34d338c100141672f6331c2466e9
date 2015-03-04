@@ -1,0 +1,22 @@
+package net.kloudspace.real;
+
+import java.io.InputStream;
+
+/*
+ * @Author Kloud
+ */
+
+public class VersionChecker implements Runnable{
+	
+	public static boolean isLatest = false;
+	public static String latest = "";
+
+	@Override
+	public void run() {
+		InputStream in = null;
+		try {
+			in = new URL()
+		}
+	}
+
+}

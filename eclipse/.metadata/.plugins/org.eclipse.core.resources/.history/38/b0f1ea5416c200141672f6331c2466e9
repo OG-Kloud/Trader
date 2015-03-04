@@ -1,0 +1,29 @@
+package net.kloudspace.version;
+
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.event.ClickEvent;
+import net.minecraft.util.ChatComponentText;
+import net.minecraft.util.ChatStyle;
+import net.minecraft.world.World;
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import cpw.mods.fml.common.gameevent.TickEvent.PlayerTickEvent;
+
+public class VersionEvents {
+	
+	@SubscribeEvent
+	public void onEvent(PlayerTickEvent event) {
+		
+		EntityPlayer thePlayer = event.player;
+		World world =thePlayer.worldObj;
+		
+		if(!Version.haveWarnedOutofDate && world.isRemote && !Version.versionChecker.isLatestVersion()) {
+			ClickEvent versionCheckChatClickEvent = new ClickEvent(ClickEvent.Action.OPEN_URL, "https://mods.io/mods/1127-trader");
+			ChatStyle clickableChatStyle = new ChatStyle().setChatClickEvent(versionCheckChatClickEvent);
+			ChatComponentText versionWarningChatComponent = new ChatComponentText("Trader is out of date, Click here to update");
+			versionWarningChatComponent.setChatStyle(clickableChatStyle);
+			thePlayer.addChatMessage(versionWarningChatComponent);
+			Version.haveWarnedOutofDate = true;
+		}
+	}
+
+}

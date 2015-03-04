@@ -1,0 +1,31 @@
+package net.kloudspace.real;
+
+import static net.minecraft.util.EnumChatFormatting.AQUA;
+import static net.minecraft.util.EnumChatFormatting.GOLD;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.event.ClickEvent;
+import net.minecraft.util.ChatComponentText;
+import net.minecraft.util.ChatStyle;
+import net.minecraft.world.World;
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import cpw.mods.fml.common.gameevent.TickEvent.PlayerTickEvent;
+
+public class VersionEvent {
+	
+	@SubscribeEvent
+	public void onEvent(PlayerTickEvent event) {
+		
+		EntityPlayer thePlayer = event.player;
+		World world =thePlayer.worldObj;
+		
+		if(!Trader.haveWarned && world.isRemote && !Trader.versionChecker.isLatestVersion()) {
+			ClickEvent versionCheckChatClickEvent = new ClickEvent(ClickEvent.Action.OPEN_URL, "https://mods.io/mods");
+			ChatStyle clickableChatStyle = new ChatStyle().setChatClickEvent(versionCheckChatClickEvent);
+			ChatComponentText versionWarningChatComponent = new ChatComponentText(GOLD + "Kloud Core is outdated, new update avalible. Click" +( AQUA + " here ") + GOLD + "to" + GOLD + " Update");
+			versionWarningChatComponent.setChatStyle(clickableChatStyle);
+			
+			event.player.addChatMessage(versionWarningChatComponent);
+			Trader.haveWarned = true;
+		}
+
+}

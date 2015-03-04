@@ -1,0 +1,14 @@
+package net.kloudspace.real.clien;
+
+import net.kloudspace.real.Trader;
+import net.kloudspace.real.VersionChecker;
+
+public class ClientProxy {
+	
+	public static void post() {
+		Trader.vc = new VersionChecker();
+		Thread versionCheckThread = new Thread(Trader.vc, "VersionCheck");
+		versionCheckThread.start();
+	}
+
+}

@@ -1,0 +1,21 @@
+package net.kloudspace.version;
+
+import net.kloudspace.real.CommonProxy;
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.SidedProxy;
+
+
+@Mod(modid = Version.MODID, name = Version.NAME, version = Version.MODVERSION)
+public class Version {
+	
+	public static final String MODID = "kloudVersions";
+	public static final String NAME = "Kloud Mod Versions";
+	public static final String MODVERSION = "1.0";
+	
+	@SidedProxy(clientSide ="net.kloudspace.version.client.ClientProxy", serverSide = "net.kloudspace.version.CommonProxy")
+	public static CommonProxy proxy;
+	
+	public static VersionChecker versionChecker;
+	public static boolean haveWarnedOutofDate;
+
+}

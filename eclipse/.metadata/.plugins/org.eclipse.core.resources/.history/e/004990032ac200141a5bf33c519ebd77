@@ -1,0 +1,35 @@
+package net.kloudspace.version;
+
+import net.kloudspace.real.utils.Reference;
+import net.kloudspace.version.proxy.CommonProxy;
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.SidedProxy;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+
+
+@Mod(modid = Version.MODID, name = Version.NAME, version = Version.MODVERSION)
+public class Version {
+	
+	public static final String MODID = "kloudversions";
+	public static final String NAME = "Kloud Mod Versions";
+	public static final String MODVERSION = Reference.VERSION;
+	
+	@SidedProxy(clientSide ="net.kloudspace.version.proxy.ClientProxy", serverSide = "net.kloudspace.version.proxy.CommonProxy")
+	public static CommonProxy proxy;
+	
+	public static VersionChecker versionChecker;
+	public static boolean haveWarnedOutofDate;
+	
+	@EventHandler
+	public void init(FMLInitializationEvent event) {
+		proxy.init(event);
+	}
+	
+	@EventHandler
+	public void post(FMLPostInitializationEvent event) {
+		proxy.post(event);
+	}
+
+}

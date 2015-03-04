@@ -1,0 +1,55 @@
+package net.kloudspace.real;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.MalformedURLException;
+import java.net.URL;
+
+import net.kloudspace.real.utils.Reference;
+
+import org.apache.commons.io.IOUtils;
+
+/*
+ * @Author Kloud
+ */
+
+public class VersionChecker implements Runnable{
+	
+	public static boolean isLatest = false;
+	public static String latest = "";
+
+	@Override
+	public void run() {
+		InputStream in = null;
+		try {
+			in = new URL("https://cdn.rawgit.com/OG-Kloud/Trader/master/src/main/java/net/kloudspace/real/version_file").openStream();
+		}
+		catch(MalformedURLException e) {
+			e.printStackTrace();
+		}
+		catch(IOException e) {
+			e.printStackTrace();
+		}
+		try {
+			latest = IOUtils.readLines(in).get(0);
+		}
+		catch(IOException e) {
+			e.printStackTrace();
+		}
+		finally {
+			IOUtils.closeQuietly(in);
+		}
+		System.out.println("Latest Version of Trader "+ latest);
+		isLatest = Reference.VERSION.equals(latest);
+		System.out.println("Is this the Latest Version" + isLatest);
+	}
+	
+	public boolean isLatest() {
+		return isLatest;
+	}
+	
+	public String latest() {
+		return latest;
+	}
+
+}

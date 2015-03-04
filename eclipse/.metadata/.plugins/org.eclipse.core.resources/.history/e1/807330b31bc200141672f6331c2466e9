@@ -1,0 +1,28 @@
+package net.kloudspace.real;
+
+import net.minecraft.client.model.ModelBiped;
+import net.minecraft.entity.player.EntityPlayer;
+
+public class CommonProxy {
+	
+	public void init () {
+		registerHandler();
+	}
+	
+	public ModelBiped getArmorModel(int id) {
+		return null;
+	}
+	
+	public int addArmor(String armorName) {
+		return 0;
+	}
+	
+	public EntityPlayer findPlayer(String playerName) {
+		return null;
+	}
+	
+	public void registerHandler() {
+		
+	}
+
+}

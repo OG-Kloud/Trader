@@ -1,0 +1,16 @@
+package net.kloudspace.real.clien;
+
+import net.kloudspace.real.Trader;
+import net.kloudspace.real.VersionChecker;
+import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+
+public class ClientProxy {
+	
+	public static void post() {
+		Trader.vc = new VersionChecker();
+		Thread versionCheckThread = new Thread(Trader.vc, "VersionCheck");
+		versionCheckThread.start();
+	}
+
+}
